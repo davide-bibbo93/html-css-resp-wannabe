@@ -75,7 +75,6 @@ img {
 /* esercitazione media queries: max-width: 420px */
 @media screen and (max-width: 420px){
   body{
-    background-color: red;
     font-size: 20px;
   }
 
@@ -119,5 +118,9 @@ img {
 
   img{
     height: 100px;
+  }
+
+  #lezioni, #steps, #why{
+    padding: 0 15px;
   }
 }
