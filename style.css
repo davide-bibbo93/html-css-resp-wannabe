@@ -98,6 +98,15 @@ img {
   #steps .row > .left, #steps .row > .central, #steps .row > .right{
     width: 100%;
     float: left;
+    margin-bottom: 20px;
+  }
+
+  #why .row > .first, #why .row > .second, #why .row > .third{
+    margin-top: 20px;
+  }
+
+  #why img{
+    height: 50px;
   }
 
   h1{
