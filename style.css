@@ -71,3 +71,21 @@ img {
 .clear {
   clear: both;
 }
+
+/* esercitazione media queries: max-width: 420px */
+@media screen and (max-width: 420px){
+  body{
+    background-color: red;
+  }
+
+  .row{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  #lezioni .row > .left, #lezioni .row > .right{
+    width: 100%;
+  }
+}
