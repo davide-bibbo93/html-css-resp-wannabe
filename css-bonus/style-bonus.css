@@ -125,13 +125,15 @@ img {
   }
 }
 
+/* esercitazione media queries: min-width: 420px e max-width: 780px */
+
 @media screen and (min-width: 420px) and (max-width: 780px){
   body{
-    font-size: 20px;
+    font-size: 18px;
   }
 
   h1{
-    font-size: 30px;
+    font-size: 28px;
   }
 
   h3{
@@ -144,9 +146,13 @@ img {
 
   .row{
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 20px;
+  }
+
+  .row::after{
+    content: '';
+    display: table;
+    clear: both;
   }
 
   #lezioni .row > .left{
@@ -154,14 +160,18 @@ img {
   }
 
   #lezioni .row > .left, #lezioni .row > .right{
-    width: 100%;
+    width: 40%;
     float: left;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   #steps .row > .left, #steps .row > .central, #steps .row > .right{
-    width: 100%;
+    width: calc(100% / 3) -16%;
     float: left;
     margin-bottom: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
   }
 
   #why .row > .first, #why .row > .second, #why .row > .third{
